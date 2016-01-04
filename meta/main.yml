@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: 'Reto Gassmann'
+  description: 'Setup bare git-repositors on a server'
+  license: BSD
+  min_ansible_version: '1.8'
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  - name: Debian
+    versions:
+    - jessie
+
+  categories:
+  - system
+  - web
+  
+dependencies: []
+  

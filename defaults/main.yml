@@ -1,0 +1,9 @@
+---
+# defaults file for netzwirt.git-server
+
+git_server_user_keys: []
+git_server_repos: []
+
+# lookup path for key files
+git_server_lookup_keys: "{{inventory_dir}}/files/public-keys"
+
