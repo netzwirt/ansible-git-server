@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: 'Reto Gassmann'
-  description: 'Setup bare git-repositors on a server'
+  description: 'Setup bare git-repositors'
   license: BSD
   min_ansible_version: '1.8'
 

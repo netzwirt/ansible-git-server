@@ -1,12 +1,12 @@
 #git-server
 
-Setup bare git-repositors on a server. 
+Setup bare git-repositors.
 
 #Role Variables
 
-git_server_user_keys: list with users
-git_server_repos: list with repos names
-git_server_lookup_keys: path to users public keys
+`git_server_user_keys`: list with users
+`git_server_repos`: list with repository names 
+`git_server_lookup_keys`: path to users public keys
 
 #Dependencies
 
