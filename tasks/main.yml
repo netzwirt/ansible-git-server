@@ -34,7 +34,7 @@
   template:
     dest: /home/git/git-shell-commands/no-interactive-login
     src: no-interactive-login.j2
-    mode: 755 
+    mode: 0755
     owner: git
     group: git
 
