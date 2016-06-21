@@ -45,6 +45,8 @@
     key: "{{ lookup('file', git_server_lookup_keys + '/' + item + '.pub') }}"
   with_items:
     - "{{git_server_user_keys}}"
+  tags:
+  - manage-keys
 
 
 - name: init repositories path
