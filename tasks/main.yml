@@ -2,10 +2,25 @@
 # tasks file for netzwirt.git-server
 
 
-- name: install git
+- name: install git on debian-like system
   apt:
     name: git
     state: present
+  when: ansible_os_family == "Debian"
+
+
+- name: install git on RH-like system
+  yum:
+    name: git
+    state: present
+  when: ansible_os_family == "RedHat"
+
+
+- name: install git on Gentoo-like system
+  portage:
+    name: dev-vcs/git
+    state: present
+  when: ansible_os_family == "Gentoo"
 
 
 - name: add git-shell to /etc/shells
@@ -34,7 +49,7 @@
   template:
     dest: /home/git/git-shell-commands/no-interactive-login
     src: no-interactive-login.j2
-    mode: 755 
+    mode: 0755
     owner: git
     group: git
 
